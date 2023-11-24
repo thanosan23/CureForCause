@@ -23,7 +23,7 @@ export default function JoinUs() {
                                 <h2 className="text-2xl underline font-bold">Events Team</h2>
                                 <p className="font-blue">We are on the lookout for passionate individuals for sharing information on various health issues. The team members will be responsible for planning events that align with Cure For Cause{"'"}s vision.</p>
                                 <div className="">
-                                    <a target="_blank" href="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfk1SUv3xF0rILV6RNa_ZMcrALp1RYgbRmjU8Tit9wVnEkcDQ/viewform?usp=sf_link"><button className="px-3 py-1 rounded-2xl bg-[#0E3455] text-white hover:scale-105 transition">Apply Now</button></a>
+                                    <a target="_blank" href="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfk1SUv3xF0rILV6RNa_ZMcrALp1RYgbRmjU8Tit9wVnEkcDQ/viewform?usp=sf_link"><button className="px-5 py-1 rounded-2xl bg-[#0E3455] text-white hover:scale-105 transition hover:opacity-80">Apply Now</button></a>
                                 </div>
                             </div>
                         </div>
@@ -31,9 +31,6 @@ export default function JoinUs() {
                         </div>
                     </div>
                     <div>
-                        {/* <div className="text-center p-10"> */}
-                        {/*     <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSfk1SUv3xF0rILV6RNa_ZMcrALp1RYgbRmjU8Tit9wVnEkcDQ/viewform"><button className="bg-gradient-to-b px-4 py-1 from-[#58AAF2] to-[#89C3F7] text-white rounded-2xl transition hover:scale-110 hover:opacity-80">Events Team Application</button></a> */}
-                        {/* </div> */}
                     </div>
                 </div>
             </section>

@@ -35,7 +35,7 @@ const Navbar = () => {
                             <li><Link href="/#footer">Contact</Link></li>
                         </ul>
                     </div>
-                    <Image alt="image logo" src="/logo.png" width={100} height={100}/>
+                    <Link href="/"><Image alt="image logo" src="/logo.png" width={100} height={100}/></Link>
                 </div>
                 <div className="navbar-end hidden lg:flex pr-10">
                     <ul className="flex flex-row gap-8 px-1 justify-center items-center">

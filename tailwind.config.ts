@@ -8,6 +8,9 @@ export default {
       fontFamily: {
         body: ["Inter"],
       },
+      backgroundImage: {
+        'team-pattern': "url('/team.jpg')",
+      }
     },
   },
   plugins: [require("daisyui")],

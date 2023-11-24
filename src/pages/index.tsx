@@ -5,13 +5,15 @@ import { motion } from 'framer-motion';
 import History from '~/components/History';
 import Footer from '~/components/Footer';
 import Link from 'next/link';
+import Contact from '~/components/Contact';
+import CustomScrollbar from '~/components/Scroll';
 
 export default function Home() {
     return (
         <>
             <Navbar />
             <section className="bg-white" id="#">
-                <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+                <div className="py-8 px-4 mx-auto min-h-screen flex-col align-middle justify-center flex items-center text-center lg:py-16 lg:px-12">
                     <motion.div  initial={{ scale: 0.2 }} animate={{ scale: 1 }} transition={{ type: 'spring' }}>
                         <a target='_blank' href="https://docs.google.com/forms/d/e/1FAIpQLSfk1SUv3xF0rILV6RNa_ZMcrALp1RYgbRmjU8Tit9wVnEkcDQ/viewform?usp=sf_link" className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full  hover:bg-gray-200" role="alert">
                             <span className="text-xs bg-primary-600 rounded-full text-white px-4 py-1.5 mr-3 bg-[#58AAF2]">New</span> <span className="text-sm font-medium">Events Team Applications are Open</span>
@@ -30,7 +32,7 @@ export default function Home() {
                 </div>
                 <History />
                 <Features />
-                {/* <Contact /> */}
+                <Contact />
                 <Footer />
             </section>
         </>

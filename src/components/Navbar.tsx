@@ -1,11 +1,29 @@
-import React from 'react';
-import Image from 'next/image';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const show = window.scrollY > 50;
+            if (show) {
+                setIsScrolled(true);
+            } else {
+                setIsScrolled(false);
+            }
+        };
+
+        document.addEventListener('scroll', handleScroll);
+        return () => {
+            document.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <>
-            <div className="navbar">
+            <div className={`navbar fixed top-0 w-full z-50 ${isScrolled ? 'backdrop-blur-md' : ''}`}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -19,8 +37,8 @@ const Navbar = () => {
                     </div>
                     <Image alt="image logo" src="/logo.png" width={100} height={100}/>
                 </div>
-                <div className="navbar-end hidden lg:flex">
-                    <ul className="flex flex-row gap-5 px-1 justify-center items-center">
+                <div className="navbar-end hidden lg:flex pr-10">
+                    <ul className="flex flex-row gap-8 px-1 justify-center items-center">
                         <li className="hover:-translate-y-0.5 hover:cursor-pointer transition"><Link href='/#'>Home</Link></li>
                         <li className="hover:-translate-y-0.5 hover:cursor-pointer transition"><Link href='/#about'>About</Link></li>
                         <li className="hover:-translate-y-0.5 hover:cursor-pointer transition"><Link href="/#footer">Contact</Link></li>

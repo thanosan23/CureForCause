@@ -8,7 +8,7 @@ const Contact = () => {
                 <form action="https://formspree.io/f/moqooaaz" method="POST" className="space-y-8">
                     <div>
                         <label  className="block mb-2 text-sm font-medium text-gray-9000">Your email</label>
-                        <input type="email" id="email" name="email" className="shadow-none bg-transparent border-b border-gray-300 text-gray-900 text-sm rounded-md focus:outline-none focus:border-sky-600 focus:bg-gray-50 block w-full p-2.5" placeholder="elon@gmail.com" required
+                        <input type="email" id="email" name="email" className="shadow-none bg-transparent border-b border-gray-300 text-gray-900 text-sm rounded-md focus:outline-none focus:border-sky-600 focus:bg-gray-50 block w-full p-2.5" placeholder="yourEmail@gmail.com" required
 />
                     </div>
                     <div>

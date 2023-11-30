@@ -41,6 +41,7 @@ const Navbar = () => {
                     <ul className="flex flex-row gap-8 px-1 justify-center items-center">
                         <li className="hover:-translate-y-0.5 hover:cursor-pointer transition"><Link href='/#'>Home</Link></li>
                         <li className="hover:-translate-y-0.5 hover:cursor-pointer transition"><Link href='/#about'>About</Link></li>
+                        <li className="hover:-translate-y-0.5 hover:cursor-pointer transition"><Link href='/#footer'>General Member Interest</Link></li>
                         <li className="hover:-translate-y-0.5 hover:cursor-pointer transition"><Link href="/#footer">Contact</Link></li>
                         <li>
                             <Link href="/join_us"><button className="hover:opacity-80 hover:-translate-y-0.5 transition bg-gradient-to-b px-4 py-1 from-[#58AAF2] to-[#89C3F7] text-white font-semibold rounded-md">Join Us</button></Link>

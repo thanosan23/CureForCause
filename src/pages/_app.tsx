@@ -3,6 +3,8 @@ import Head from "next/head";
 
 import "~/styles/globals.css";
 
+import { Analytics } from '@vercel/analytics/react';
+
 const App: AppType = ({ Component, pageProps }) => {
     return (
         <>
@@ -13,6 +15,7 @@ const App: AppType = ({ Component, pageProps }) => {
             </Head>
             <div>
                 <Component {...pageProps} />
+                <Analytics />
             </div>
         </>
     );
